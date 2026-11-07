@@ -15,6 +15,7 @@ firmware**.
 | I want to... | Go to |
 |---|---|
 | Install the Android app | [Android installation](getting-started/installation.md) |
+| Check if my board is supported | [Supported boards](firmware/supported-boards.md) |
 | Flash the ESP32 firmware | [Firmware flashing](firmware/flashing.md) |
 | Learn the app workflows | [Android usage guide](android/usage-guide.md) |
 | Set up the Termux SSH terminal | [Terminal guide](android/terminal-guide.md) |
@@ -28,6 +29,10 @@ Android:  1.0.0-beta.3.2.0
 Firmware: 1.0.0-beta.3.2.0
 Protocol: 1.0 / proto_minor 2, non-mesh
 ```
+
+The firmware supports classic ESP32, ESP32-C3, ESP32-C5, ESP32-S2, and
+ESP32-S3 boards, including common devkits and compact SuperMini, Mini, and Nano
+variants. Match the target by MCU family and PSRAM configuration.
 
 Download the matching builds from GitHub Releases:
 

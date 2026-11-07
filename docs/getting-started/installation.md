@@ -10,7 +10,8 @@
 - Android 8.0 or newer
 - USB-OTG support
 - A compatible USB cable or OTG adapter
-- An ESP32 board supported by NRSuite firmware
+- An ESP32 classic, C3, C5, S2, or S3 board supported by NRSuite firmware
+  (devkits and compatible SuperMini/Mini/Nano variants)
 
 ### Firmware
 
