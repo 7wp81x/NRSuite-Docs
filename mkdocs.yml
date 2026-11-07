@@ -1,0 +1,94 @@
+site_name: NRSuite Documentation
+site_description: Documentation, guides, and downloadable resources for the NRSuite Android app and ESP32 firmware.
+site_url: https://7wp81x.github.io/NRSuite-Docs/
+repo_url: https://github.com/7wp81x/NRSuite-Docs
+repo_name: NRSuite-Docs
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  logo: assets/images/logo.png
+  favicon: assets/images/favicon.png
+  palette:
+    - scheme: slate
+      primary: green
+      accent: light green
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+    - scheme: default
+      primary: green
+      accent: light green
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+  features:
+    - navigation.instant
+    - navigation.sections
+    - navigation.top
+    - navigation.tracking
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+    - toc.follow
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Installation: getting-started/installation.md
+  - Android:
+      - Usage Guide: android/usage-guide.md
+      - Terminal Guide: android/terminal-guide.md
+      - Storage and SAF: android/storage-saf.md
+  - Firmware:
+      - Supported Boards: firmware/supported-boards.md
+      - Flashing: firmware/flashing.md
+  - Protocol:
+      - Overview: protocol/overview.md
+      - Specification: protocol/PROTOCOL-SPEC.md
+      - Compatibility: protocol/COMPATIBILITY.md
+      - Mesh Foundation: protocol/MESH-FOUNDATION.md
+      - Commands:
+          - Overview: protocol/commands/README.md
+          - System: protocol/commands/system.md
+          - Wi-Fi: protocol/commands/wifi.md
+          - Defense: protocol/commands/defense.md
+          - BLE: protocol/commands/ble.md
+          - Storage and HID: protocol/commands/storage-hid.md
+          - Sensors: protocol/commands/sensors.md
+          - RFID: protocol/commands/rfid.md
+          - Mesh: protocol/commands/mesh.md
+      - Events:
+          - Overview: protocol/events/README.md
+          - System: protocol/events/system.md
+          - Wi-Fi: protocol/events/wifi.md
+          - Defense: protocol/events/defense.md
+          - Portal: protocol/events/portal.md
+          - BLE: protocol/events/ble.md
+          - HID: protocol/events/hid.md
+          - Sensors: protocol/events/sensors.md
+          - RFID: protocol/events/rfid.md
+          - Mesh: protocol/events/mesh.md
+  - Resources:
+      - Examples and Downloads: resources/index.md
+      - Portal Templates: resources/portal-templates.md
+  - Troubleshooting: troubleshooting.md
+  - Authorized Use: authorized-use.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+plugins:
+  - search

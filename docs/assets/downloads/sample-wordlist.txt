@@ -1,0 +1,7 @@
+changeme
+password
+password123
+nrsuite-example
+authorized-test-1
+authorized-test-2
+authorized-test-3

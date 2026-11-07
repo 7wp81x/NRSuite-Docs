@@ -1,0 +1,13 @@
+{
+  "example_only": true,
+  "description": "Illustrative NRSuite configuration values. Use the app UI for real configuration.",
+  "wifi": {
+    "regulatory_country": "US",
+    "preferred_scan_band": "auto"
+  },
+  "terminal": {
+    "autoconnect": true,
+    "show_startup_banner": true,
+    "use_nrsuite_prompt": false
+  }
+}

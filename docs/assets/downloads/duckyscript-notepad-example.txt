@@ -1,0 +1,11 @@
+REM NRSuite DuckyScript example for an authorized test machine.
+REM Opens Notepad and types a harmless test string.
+
+DELAY 1000
+GUI r
+DELAY 500
+STRING notepad
+ENTER
+DELAY 1200
+STRING NRSuite authorized DuckyScript test.
+ENTER
