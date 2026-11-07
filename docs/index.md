@@ -34,6 +34,10 @@ The firmware supports classic ESP32, ESP32-C3, ESP32-C5, ESP32-S2, and
 ESP32-S3 boards, including common devkits and compact SuperMini, Mini, and Nano
 variants. Match the target by MCU family and PSRAM configuration.
 
+> ESP32-C5 boards can have different available heap and largest-block values.
+> Memory-heavy features such as BLE HID may pass on one C5 variant and be
+> rejected on another. Check live device telemetry before starting them.
+
 Download the matching builds from GitHub Releases:
 
 - [NRSuite Android releases](https://github.com/7wp81x/NRSuite-Android/releases)

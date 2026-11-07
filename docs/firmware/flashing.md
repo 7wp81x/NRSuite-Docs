@@ -47,6 +47,13 @@ Replace `--chip` and the filename for your board.
 The C5 bootloader is included at `0x2000` inside the merged image, but the image
 itself is written at `0x0`.
 
+## ESP32-C5 memory note
+
+ESP32-C5 variants can report different free-heap and largest-block values.
+Memory-heavy features such as BLE HID may work on one C5 board and be rejected
+on another. Check the live telemetry in the app before assuming a feature will
+start.
+
 ## Before flashing
 
 Back up custom wordlists, portal templates, captures, and other device-side

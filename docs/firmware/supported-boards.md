@@ -60,6 +60,16 @@ The Android app disables the corresponding cards and displays
 ESP32-S2 also has no BLE radio. BadUSB, MSC, WPS, IR, and other supported S2
 features remain available.
 
+## ESP32-C5 memory variability
+
+ESP32-C5 boards are not all equivalent. Available heap and the largest
+allocatable block can vary by board revision, bootloader/Arduino core version,
+enabled firmware features, active modules, and USB versus UART transport. A C5
+variant that passes a memory check in one configuration may fail it in another.
+
+Do not assume that memory behavior from one C5 board applies to every C5 board.
+Check the live values in **Devices** before starting memory-heavy modules.
+
 ## ESP32-C5 BLE HID
 
 C5 BLE HID startup uses a memory guard of at least:
@@ -69,9 +79,10 @@ C5 BLE HID startup uses a memory guard of at least:
 48 KiB largest allocatable block
 ```
 
-C5 runtime memory may fall below that threshold. If it does, firmware rejects
-BLE HID startup with a structured low-memory error rather than risking an
-unstable session.
+Some C5 variants pass this guard and can start BLE HID; others may be rejected
+with a structured low-memory error. This is board/runtime dependent, not a
+universal C5 limitation. Do not lower the release guard based on the test-only
+C5 heap diagnostic profile.
 
 ## GPIO and peripheral wiring
 
