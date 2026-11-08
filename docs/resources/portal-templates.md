@@ -254,5 +254,6 @@ different allowed channel or change the Wi-Fi regulatory country in **Settings**
 </body>
 </html>
 
-A ready-to-use example is available at
-[`docs/examples/captive-portal-example.html`](../assets/downloads/portal-example.html).
+A ready-to-use example is available for download:
+
+[Download `portal-example.html`](../assets/downloads/portal-example.html)
