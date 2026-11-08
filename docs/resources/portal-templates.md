@@ -253,6 +253,7 @@ different allowed channel or change the Wi-Fi regulatory country in **Settings**
   </main>
 </body>
 </html>
+```
 
 A ready-to-use example is available for download:
 
